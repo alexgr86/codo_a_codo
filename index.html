@@ -29,14 +29,15 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+
+            <div class="d-flex justify-content-end text-light navbar-nav" style="width: 100%;">
               <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
               <a class="nav-link" href="#">Los oradores</a>
               <a class="nav-link" href="#">El lugar y la fecha</a>
               <a class="nav-link" href="#">Conviertete en orador</a>
               <a class="nav-link active text-success" aria-current="page" href="#">Comprar tickets</a>
-              
             </div>
+            
           </div>
         </div>
     </nav>
@@ -44,7 +45,7 @@
 
 
 
-    <div class="bg-image" style="background-image: url('./img/ba1.jpg');">
+    <div class="bg-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./img/ba1.jpg');">
       
       <div class="d-flex justify-content-end align-items-center" style="height: 70vh">
        
@@ -59,6 +60,11 @@
               <p class="text-light">
                 Bs As llega por primera vez a argentina. Un evento para compartir con el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de codo a codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!
               </p>
+
+              <div class="d-grid gap-2 d-md-block">
+                <button type="button" class="btn btn-outline-light btn-sm">Quiero ser orador</button>
+                <button type="button" class="btn btn-success btn-sm">Comprar tickets</button>
+              </div>
             </div>
           </div>  
         </div>
@@ -69,64 +75,19 @@
     
     
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
 
-          <div class="carousel-item active " data-bs-interval="2000">
-            <img src="./img/ba1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/ba2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./img/ba3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              
-                
-              <div class="d-flex justify-content-end">
-                
-                <h5>Conf Bs As</h5>
-                <p>
-                  Bs As llega por primera vez a argentina. Un evento para compartir con el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de codo a codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!
-                </p>
-              </div>
-       
-                
-              
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/ba1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <div class="container">
-                <div class="row justify-content-end">
-                  <div class="col-6">
-                    <h5>Conf Bs As</h5>
-                    <p>
-                      Bs As llega por primera vez a argentina. Un evento para compartir con el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de codo a codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-    </div>
 
     <p class="text-center fw-light">CONOCE A LOS</p>
     <p class="text-center fw-bold">ORADORES</p>
-        
+    
+    
+    <!-- BLOQUE DE CARDS -->
     <div class="container px-4">
 
         <div class="row g-3">
 
+          
+          <!-- PRIMER CARD -->
           <div class="col-sm-4">
             <div class="card">
               
@@ -135,7 +96,7 @@
   
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                  <div class="badge bg-warning text-wrap" style="width: 6rem;">
                     Java Script
                   </div>
                   <div class="badge bg-primary text-wrap" style="width: 6rem;">
@@ -151,15 +112,16 @@
             </div>
           </div>
 
+          <!-- SEGUNDA CARD -->
           <div class="col-sm-4">
             <div class="card">
               
-              <img src="./img/steve.jpg" class="card-img-top" alt="...">
+              <img src="./img/bill.jpg" class="card-img-top" alt="...">
   
   
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                  <div class="badge bg-warning text-wrap" style="width: 6rem;">
                     Java Script
                   </div>
                   <div class="badge bg-primary text-wrap" style="width: 6rem;">
@@ -169,35 +131,38 @@
               </ul>
   
               <div class="card-body">
-                <h5 class="card-title">Steve Jobs</h5>
+                <h5 class="card-title">Bill Gates</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti facere, veritatis, tenetur consequuntur nam quasi alias nulla inventore rem doloremque exercitationem aut nisi repudiandae vel, illum animi fuga iure harum.</p>
               </div>
             </div>
           </div>
 
+          <!-- TERCERA CARD -->
           <div class="col-sm-4">
             <div class="card">
               
-              <img src="./img/steve.jpg" class="card-img-top" alt="...">
+              <img src="./img/ada.jpeg" class="card-img-top" alt="...">
   
   
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <div class="badge bg-primary text-wrap" style="width: 6rem;">
-                    Java Script
+                  <div class="badge bg-secondary text-wrap" style="width: 6rem;">
+                    Negocios
                   </div>
-                  <div class="badge bg-primary text-wrap" style="width: 6rem;">
-                    React
+                  <div class="badge bg-danger text-wrap" style="width: 6rem;">
+                    Startups
                   </div>
                 </li>
               </ul>
   
               <div class="card-body">
-                <h5 class="card-title">Steve Jobs</h5>
+                <h5 class="card-title">Ada Lovelace</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti facere, veritatis, tenetur consequuntur nam quasi alias nulla inventore rem doloremque exercitationem aut nisi repudiandae vel, illum animi fuga iure harum.</p>
               </div>
             </div>
           </div>
+
+          
 
           <span></span>
 
@@ -205,7 +170,7 @@
 
     </div>
 
-    
+    <!-- CARD HORIZONTAL -->
     <div class="card mb-10 bg-dark">
       <div class="row g-3">
         <div class="col-md-6">
@@ -213,16 +178,16 @@
         </div>
         <div class="col-md-6">
           <div class="card-body">
-            <h5 class="card-title text-light bg-dark">Card title</h5>
-            <p class="card-text text-light bg-dark">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text text-light bg-dark"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title text-light bg-dark">Bs As Octubre</h5>
+            <p class="card-text text-light bg-dark">Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los estados unidos. Honolulu es la mas surena de entre las principales ciudades estadounidenses. Aunque el nombre Honolulu se refiere al area urbana en la costa sureste de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km de superfice).</p>
+            <button type="button" class="btn btn-outline-light btn-sm">Conocé más</button>
+            
           </div>
         </div>
       </div>
     </div>
-    
-    
-
+  
+    <!-- FORMULARIO -->
     <div class="container">
       <div class="row g-3">
 
@@ -254,6 +219,7 @@
     </div>
 
 
+    <!-- BARRA PIE -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         
@@ -261,9 +227,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            
 
+          <div class="d-flex justify-content-center text-light navbar-nav" style="width: 100%;">
             <a class="nav-link" href="#">Preguntas Frecuentes</a>
             <a class="nav-link" href="#">Contactanos</a>
             <a class="nav-link" href="#">Prensa</a>
@@ -271,14 +236,26 @@
             <a class="nav-link" href="#">Terminos y condiciones</a>
             <a class="nav-link" href="#">Privacidad</a>
             <a class="nav-link" href="#">Estudiantes</a>
+          </div>
+
+          <div class="navbar-nav">
             
+            
+
+            <!--
+            <a class="nav-link" href="#">Preguntas Frecuentes</a>
+            <a class="nav-link" href="#">Contactanos</a>
+            <a class="nav-link" href="#">Prensa</a>
+            <a class="nav-link" href="#">Conferencias</a>
+            <a class="nav-link" href="#">Terminos y condiciones</a>
+            <a class="nav-link" href="#">Privacidad</a>
+            <a class="nav-link" href="#">Estudiantes</a>
+            -->
 
           </div>
         </div>
       </div>
     </nav>
-    
-
 
 
     <!-- Optional JavaScript; choose one of the two! -->
